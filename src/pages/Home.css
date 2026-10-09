@@ -1,0 +1,32 @@
+.home__gallery {
+  margin-top: 43px;
+  background-color: var(--light-grey);
+  border-radius: 25px;
+  padding: 56px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 60px;
+}
+
+.home__message {
+  margin-top: 43px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .home__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__gallery {
+    margin-top: 22px;
+    background-color: transparent;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
