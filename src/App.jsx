@@ -5,8 +5,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Property from './pages/Property'
 import NotFound from './pages/NotFound'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (

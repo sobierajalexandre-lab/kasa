@@ -1,7 +1,7 @@
 // En-tête du site : logo + menu de navigation
 
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/logo.svg' // Vite transforme l'import en chemin d'image
+import logo from '../../assets/logo.svg' // Vite transforme l'import en chemin d'image
 import './Header.css'
 
 function Header() {
