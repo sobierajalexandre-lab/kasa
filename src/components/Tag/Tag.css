@@ -1,0 +1,16 @@
+.tag {
+  padding: 3px 20px;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+}

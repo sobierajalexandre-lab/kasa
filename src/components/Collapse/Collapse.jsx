@@ -9,7 +9,7 @@ import './Collapse.css'
 // - title : le texte de la barre rouge
 // - children : le contenu affiché à l'ouverture (texte, liste...)
 function Collapse({ title, children }) {
-  // Fermé par défaut, comme demandé dans le brief de Paul
+  // Fermé par défaut
   const [isOpen, setIsOpen] = useState(false)
 
   return (

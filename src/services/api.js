@@ -18,13 +18,18 @@ export async function getProperties() {
 }
 
 // Récupère un seul logement grâce à son id
+// Renvoie null si le logement n'existe pas (erreur 404 du back-end)
 export async function getProperty(id) {
-  // Les backticks `...` permettent d'insérer une variable avec ${...}
   const response = await fetch(`${API_URL}/${id}`)
 
-  // Si l'id n'existe pas, le back-end renvoie une erreur 404
+  // Logement inexistant : on renvoie null pour rediriger vers la page 404
+  if (response.status === 404) {
+    return null
+  }
+
+  // Autre problème (serveur en panne...) : on lève une erreur
   if (!response.ok) {
-    throw new Error('Logement introuvable')
+    throw new Error('Impossible de récupérer le logement')
   }
 
   return response.json()
