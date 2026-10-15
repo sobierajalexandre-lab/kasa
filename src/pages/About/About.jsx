@@ -1,8 +1,8 @@
 // Page À propos : bannière + liste des valeurs de Kasa
 
-import Banner from '../components/Banner/Banner'
-import Collapse from '../components/Collapse/Collapse'
-import bannerImg from '../assets/banner-about.png'
+import Banner from '../../components/Banner/Banner'
+import Collapse from '../../components/Collapse/Collapse'
+import bannerImg from '../../assets/banner-about.png'
 import './About.css'
 
 // Les données sont dans un tableau : on génère les Collapses avec .map()

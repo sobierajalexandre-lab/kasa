@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
-import { getProperty } from '../services/api'
-import Gallery from '../components/Gallery/Gallery'
-import Tag from '../components/Tag/Tag'
-import Host from '../components/Host/Host'
-import Rating from '../components/Rating/Rating'
-import Collapse from '../components/Collapse/Collapse'
+import { getProperty } from '../../services/api'
+import Gallery from '../../components/Gallery/Gallery'
+import Tag from '../../components/Tag/Tag'
+import Host from '../../components/Host/Host'
+import Rating from '../../components/Rating/Rating'
+import Collapse from '../../components/Collapse/Collapse'
 import './Property.css'
 
 function Property() {

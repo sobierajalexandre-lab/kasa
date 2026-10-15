@@ -1,10 +1,10 @@
 // Composant principal : structure commune à toutes les pages + gestion des routes
 
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Property from './pages/Property'
-import NotFound from './pages/NotFound'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Property from './pages/Property/Property'
+import NotFound from './pages/NotFound/NotFound'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 

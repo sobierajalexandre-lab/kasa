@@ -1,10 +1,10 @@
 // Page d'accueil : bannière + liste des logements récupérés depuis l'API
 
 import { useEffect, useState } from 'react'
-import Banner from '../components/Banner/Banner'
-import Card from '../components/Card/Card'
-import { getProperties } from '../services/api'
-import bannerImg from '../assets/banner-home.png'
+import Banner from '../../components/Banner/Banner'
+import Card from '../../components/Card/Card'
+import { getProperties } from '../../services/api'
+import bannerImg from '../../assets/banner-home.png'
 import './Home.css'
 
 function Home() {
