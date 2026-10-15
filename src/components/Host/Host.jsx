@@ -5,8 +5,6 @@ import './Host.css'
 
 function Host({ name, picture }) {
   // La maquette affiche le prénom et le nom sur deux lignes.
-  // split(' ') découpe "Nathalie Jean" en ["Nathalie", "Jean"]
-  // ...lastName récupère tout le reste (utile pour les noms composés)
   const [firstName, ...lastName] = name.split(' ')
 
   return (

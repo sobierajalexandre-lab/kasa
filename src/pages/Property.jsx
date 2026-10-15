@@ -11,7 +11,6 @@ import './Property.css'
 
 function Property() {
   // useParams récupère les paramètres de l'URL
-  // Pour /property/c67ab8a7, id vaut "c67ab8a7"
   const { id } = useParams()
 
   const [property, setProperty] = useState(null)
@@ -60,7 +59,6 @@ function Property() {
 
         <div className="property__host-rating">
           <Host name={property.host.name} picture={property.host.picture} />
-          {/* rating est un texte ("4") dans l'API : Number() le convertit en nombre */}
           <Rating value={Number(property.rating)} />
         </div>
       </div>
