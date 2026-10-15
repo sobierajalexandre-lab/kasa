@@ -1,0 +1,25 @@
+.rating {
+  display: flex;
+  gap: 15px;
+}
+
+.rating__star {
+  width: 36px;
+  height: 36px;
+  fill: #e3e3e3;
+}
+
+.rating__star--active {
+  fill: var(--red);
+}
+
+@media (max-width: 768px) {
+  .rating {
+    gap: 6px;
+  }
+
+  .rating__star {
+    width: 15px;
+    height: 15px;
+  }
+}
