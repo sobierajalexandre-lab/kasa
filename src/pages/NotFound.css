@@ -23,6 +23,7 @@
   margin-top: 180px;
   font-size: 18px;
   text-decoration: underline;
+  color: var(--dark);
 }
 
 @media (max-width: 768px) {

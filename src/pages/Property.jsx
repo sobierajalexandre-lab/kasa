@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import { getProperty } from '../services/api'
+import Gallery from '../components/Gallery/Gallery'
 import Tag from '../components/Tag/Tag'
 import Host from '../components/Host/Host'
 import Rating from '../components/Rating/Rating'
@@ -44,7 +45,8 @@ function Property() {
 
   return (
     <article className="property">
-      {/* La Gallery viendra ici (partie 2) */}
+      {/* Carrousel des photos du logement */}
+      <Gallery pictures={property.pictures} title={property.title} />
 
       <div className="property__header">
         <div className="property__info">
@@ -59,6 +61,7 @@ function Property() {
 
         <div className="property__host-rating">
           <Host name={property.host.name} picture={property.host.picture} />
+          {/* rating est un texte ("4") dans l'API : Number() le convertit en nombre */}
           <Rating value={Number(property.rating)} />
         </div>
       </div>

@@ -1,0 +1,78 @@
+.gallery {
+  position: relative;
+  height: 415px; /* Hauteur fixe demandée par le brief */
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: var(--light-grey);
+}
+
+/* L'image remplit le cadre : elle est recadrée et centrée */
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery__btn--prev {
+  left: 13px;
+}
+
+.gallery__btn--next {
+  right: 13px;
+}
+
+.gallery__arrow {
+  width: 47px;
+  height: 80px;
+}
+
+/* La flèche de droite est la flèche de gauche retournée */
+.gallery__btn--next .gallery__arrow {
+  transform: rotate(180deg);
+}
+
+.gallery__counter {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .gallery__btn--prev {
+    left: 0;
+  }
+
+  .gallery__btn--next {
+    right: 0;
+  }
+
+  .gallery__arrow {
+    width: 12px;
+    height: 20px;
+  }
+
+  /* Le compteur est masqué en mobile sur la maquette */
+  .gallery__counter {
+    display: none;
+  }
+}
