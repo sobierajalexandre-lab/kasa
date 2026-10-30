@@ -1,16 +1,78 @@
-# React + Vite
+# Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web de location immobilière entre particuliers, développée en React dans le cadre de la formation Développeur Web d'OpenClassrooms.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Accueil** : liste des logements récupérés depuis l'API
+- **Fiche logement** : galerie photo, informations, hôte, note, description et équipements
+- **À propos** : valeurs de Kasa présentées dans des menus déroulants
+- **Page 404** : pour toute URL inconnue ou tout logement inexistant
+- Interface **responsive** (ordinateur, tablette, mobile)
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev)
+- [React Router](https://reactrouter.com)
+- [Vite](https://vite.dev)
+- CSS (un fichier par composant, nommage BEM)
+- [Vitest](https://vitest.dev) et [React Testing Library](https://testing-library.com) pour les tests
 
-## Expanding the ESLint configuration
+## Prérequis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Node.js](https://nodejs.org) (version 20 ou plus récente)
+- [Git](https://git-scm.com)
+
+## Installation et lancement
+
+L'application a besoin de deux parties lancées en même temps : le back-end (l'API) et le front-end (l'application React).
+
+### 1. Le back-end
+
+```bash
+git clone https://github.com/OpenClassrooms-Student-Center/TesteurLogiciel_appli_location_immobiliere_React.git kasa-backend
+cd kasa-backend/backend
+npm install
+npm start
+```
+
+L'API est disponible sur `http://localhost:8080`.
+
+### 2. Le front-end
+
+Dans un autre terminal :
+
+```bash
+git clone https://github.com/sobierajalexandre-lab/kasa.git
+cd kasa
+npm install
+npm start
+```
+
+L'application est disponible sur `http://localhost:5173`.
+
+## Tests
+
+```bash
+npm test              # lance les tests
+npm run coverage      # lance les tests et affiche le taux de couverture
+```
+
+Composants testés : Collapse et Gallery (avec state), Tag, Card et Rating (sans state).
+
+## Structure du projet
+
+```
+src/
+  assets/       images et icônes
+  components/   composants réutilisables, un dossier par composant
+  pages/        pages de l'application, un dossier par page
+  services/     appels à l'API
+  Tests/        Tests des différents composants
+  App.jsx       mise en page commune et routes
+  main.jsx      point d'entrée
+```
+
+## Auteur
+
+Alexandre Sobieraj
