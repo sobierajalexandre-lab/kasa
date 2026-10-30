@@ -2,7 +2,7 @@
 
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import Rating from './Rating'
+import Rating from '../src/components/Rating/Rating'
 
 describe('Rating', () => {
   it('annonce la note aux lecteurs d’écran', () => {

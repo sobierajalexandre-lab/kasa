@@ -2,7 +2,7 @@
 
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import Gallery from './Gallery'
+import Gallery from '../src/components/Gallery/Gallery'
 
 // Fausses données : 3 photos (pas besoin de vraies images pour tester)
 const pictures = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg']

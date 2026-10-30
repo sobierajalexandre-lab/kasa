@@ -2,7 +2,7 @@
 
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import Banner from './Banner'
+import Banner from '../src/components/Banner/Banner'
 
 describe('Banner', () => {
   it('affiche le titre quand il est fourni', () => {

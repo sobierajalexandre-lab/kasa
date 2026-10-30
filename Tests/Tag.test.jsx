@@ -2,7 +2,7 @@
 
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import Tag from './Tag'
+import Tag from '../src/components/Tag/Tag'
 
 describe('Tag', () => {
   it('affiche le texte reçu en prop', () => {

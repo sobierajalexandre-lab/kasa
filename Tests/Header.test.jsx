@@ -3,7 +3,7 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { describe, it, expect } from 'vitest'
-import Header from './Header'
+import Header from '../src/components/Header/Header'
 
 // initialEntries simule l'URL sur laquelle se trouve l'utilisateur
 function renderHeaderAt(url) {

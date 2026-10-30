@@ -3,7 +3,7 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { describe, it, expect } from 'vitest'
-import Card from './Card'
+import Card from '../src/components/Card/Card'
 
 // Card contient un <Link> : il a besoin d'un routeur pour fonctionner.
 // MemoryRouter est un routeur "en mémoire", idéal pour les tests.

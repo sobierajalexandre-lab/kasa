@@ -2,7 +2,7 @@
 
 import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import Collapse from './Collapse'
+import Collapse from '../src/components/Collapse/Collapse'
 
 describe('Collapse', () => {
   it('affiche le titre reçu en prop', () => {
